@@ -1,0 +1,102 @@
+<link rel="stylesheet" type="text/css" href="/assets/main.css">
+
+<div ng-app="TrafficAccidents" ng-controller="IndexController" class="container">
+
+  <h1 id="title">Traffic accidents in Helsinki city area</h1>
+
+  <h3>What?</h3>
+
+  <p class="text-field">
+    We have done research based on open data of road usages and traffic accidents on Helsinki city area.
+    By comparing these two datasets with each other, we have noticed that some streets are more prone to accidents than others.
+    <br>
+    Similarly, some other streets are more secure when you compare them by how many cars drive there every day, and
+    how many accidents occur annually on those streets.
+  </p>
+
+  <h3>Why?</h3>
+
+  <p class="text-field">
+    We have only recently started this research, but in the future once we have extracted enough information based on the data, Helsinki will surely
+    value our findings when they're about to build new roads, or devise speed limits for existing ones.<br>
+    <strike>And thus we're of course going to make billions, and billions and billions of euros.</strike>
+  </p>
+
+  <h3>Figures</h3>
+
+  <p>The following are some figures we have produced based on data.
+    <br>
+    <ul>
+      <li>The first figure expresses the amount of traffic in certain streets in Helsinki annually.</li>
+      <li>The second figure expresses the amounts of different kinds of traffic accidents for the same streets.</li>
+      <li>The third figure displays the ratio between these two.</li>
+
+      <br>For the third figure, high ratio means that the amount of accidents per traffic amount is high.
+      <br>If we had more information, we might even say that the likelihood of an accident happening on that street is higher than typically.
+    </ul>
+  </p>
+
+  <div class="figure row">
+    <img class="col-xs-11" src="/assets/figures/2_trafficplot.png"/>
+    <a class="col-xs-1" href="/assets/figures/2_trafficplot.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Annual traffic in Helsinki city area</b>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-11" src="/assets/figures/1_accidentplot.png"/>
+    <a class="col-xs-1" href="/assets/figures/1_accidentplot.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Annual accidents in Helsinki city area</b>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-11" src="/assets/figures/3_accident_ratioplot.png"/>
+    <a class="col-xs-1" href="/assets/figures/3_accident_ratioplot.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Annual accidents vs. traffic comparison</b>
+  </div>
+
+  <p>As it's for example easy to assume, <b>Kehä I</b> and <b>Lahdenväylä</b> are both used quite a lot, but what isn't necessarily obvious is that
+    accidents happen in those roads way more often than in <b>Kehä III</b>. At the same time <b>Itäväylä</b> is still more accident prone than any of these.
+  </p>
+
+  <p style="margin-top: 30px;">The following images visualize the above results on a map.</p>
+
+  <div class="figure row">
+    <img class="col-xs-10" src="/assets/figures/4_measurement_points.png"/>
+    <a class="col-xs-2" href="/assets/figures/4_measurement_points.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Measurement points of traffic data on a map</b>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-10" src="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png"/>
+    <a class="col-xs-2" href="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Accidents vs. traffic comparison. Larger circle around measurement point means higher accident ratio.</b>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-10" src="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png"/>
+    <a class="col-xs-2" href="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png">See in full size</a>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-10" src="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png"/>
+    <a class="col-xs-2" href="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png">See in full size</a>
+  </div>
+
+  <div class="figure row">
+    <img class="col-xs-10" src="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png"/>
+    <a class="col-xs-2" href="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png">See in full size</a>
+  </div>
+
+  <h4 id="team">Team</h4>
+  <ul>
+    <li>Huttunen, Mika</li>
+    <li>Kettunen, Elina</li>
+    <li>Räty, Matti</li>
+  </ul>
+
+</div>
