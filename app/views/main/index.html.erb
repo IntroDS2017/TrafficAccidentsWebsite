@@ -4,25 +4,24 @@
 
   <h1 id="title">Traffic accidents in Helsinki city area</h1>
 
-  <h3>What?</h3>
+
+  <h3>Introduction</h3>
 
   <p class="text-field">
-    We have done research based on open data of road usages and traffic accidents on Helsinki city area.
-    By comparing these two datasets with each other, we have noticed that some streets are more prone to accidents than others.
+    We have done research based on the open datasets on ‘Road traffic accidents’ and ‘Traffic Volumes’ in the Helsinki city area.
+    Our initial plan was to find correlations between the traffic volumes and the road accidents on different streets in Helsinki, and we also wanted to see if there are any especially dangerous roads out there.
     <br>
-    Similarly, some other streets are more secure when you compare them by how many cars drive there every day, and
-    how many accidents occur annually on those streets.
+    Following when we talk about annual ’traffic volume’ on a certain road, we mean the amount motor vehicles that annually pass that certain measurement point.
+
+    <br><br>
+
+    The dataset ‘Traffic Volumes’ in Helsinki provides information on the volumes of different vehicles on the streets of Helsinki from the year 2011 onwards. The traffic volumes were counted hourly (Monday-Thursday) in September and October, so the data represents average daily volumes during these two months.
+    <br>
+    The other dataset ‘Road traffic accidents’ contains records of all traffic accidents in Finland (except in Åland) from 2005 to 2016. We used the data from 2011 to 2016, and selected the entries that are in the Helsinki area.
   </p>
 
-  <h3>Why?</h3>
 
-  <p class="text-field">
-    We have only recently started this research, but in the future once we have extracted enough information based on the data, Helsinki will surely
-    value our findings when they're about to build new roads, or devise speed limits for existing ones.<br>
-    <strike>And thus we're of course going to make billions, and billions and billions of euros.</strike>
-  </p>
-
-  <h3>Figures</h3>
+  <h3>Results</h3>
 
   <p>The following are some figures we have produced based on data.
     <br>
@@ -40,26 +39,32 @@
     <img class="col-xs-11" src="/assets/figures/2_trafficplot.png"/>
     <a class="col-xs-1" href="/assets/figures/2_trafficplot.png">See in full size</a>
 
-    <b class="figure-text col-xs-12">Annual traffic in Helsinki city area</b>
+    <span class="figure-text col-xs-12"><b>Figure 1. Annual traffic in Helsinki area.</b>
+      On the x-axis, you can see the different roads in alphabetical order, and for each road, six bars representing
+      the years from 2011 to 2016. On the y-axis we have approximated annual traffic volume formed by multiplying the average
+      daily volume from September to October by 365. Unit: 3.0 * 1e7 = 30 000 000 cars.
+    </span>
   </div>
 
   <div class="figure row">
     <img class="col-xs-11" src="/assets/figures/1_accidentplot.png"/>
     <a class="col-xs-1" href="/assets/figures/1_accidentplot.png">See in full size</a>
 
-    <b class="figure-text col-xs-12">Annual accidents in Helsinki city area</b>
+    <span class="figure-text col-xs-12"><b>Figure 2. Annual accidents in Helsinki area.</b>
+      On the y-axis you can see the total amounts of accidents.
+    </span>
   </div>
 
   <div class="figure row">
     <img class="col-xs-11" src="/assets/figures/3_accident_ratioplot.png"/>
     <a class="col-xs-1" href="/assets/figures/3_accident_ratioplot.png">See in full size</a>
 
-    <b class="figure-text col-xs-12">Annual accidents vs. traffic comparison</b>
+    <span class="figure-text col-xs-12"><b>Figure 3. Annual accidents vs. traffic comparison.</b>
+      On the y-axis you can see the ratio between the accidents and traffic volumes. The ratio itself doesn't tell about
+      the number of individuals involved in the accident.
+    </span>
   </div>
 
-  <p>As it's for example easy to assume, <b>Kehä I</b> and <b>Lahdenväylä</b> are both used quite a lot, but what isn't necessarily obvious is that
-    accidents happen in those roads way more often than in <b>Kehä III</b>. At the same time <b>Itäväylä</b> is still more accident prone than any of these.
-  </p>
 
   <p style="margin-top: 30px;">The following images visualize the above results on a map.</p>
 
@@ -67,30 +72,57 @@
     <img class="col-xs-10" src="/assets/figures/4_measurement_points.png"/>
     <a class="col-xs-2" href="/assets/figures/4_measurement_points.png">See in full size</a>
 
-    <b class="figure-text col-xs-12">Measurement points of traffic data on a map</b>
+    <b class="figure-text col-xs-12">Figure 4. Measurement points of traffic data on a map</b>
   </div>
 
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png"/>
     <a class="col-xs-2" href="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png">See in full size</a>
 
-    <b class="figure-text col-xs-12">Accidents vs. traffic comparison. Larger circle around measurement point means higher accident ratio.</b>
+    <b class="figure-text col-xs-12">Figure 5. Accidents vs. traffic comparison. Larger circle around measurement point means higher accident ratio.</b>
   </div>
 
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png"/>
     <a class="col-xs-2" href="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Figure 6. Accidents vs. traffic comparison in Helsinki central.</b>
   </div>
 
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png"/>
     <a class="col-xs-2" href="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Figure 7. Accidents vs. traffic comparison in western part of Helsinki.</b>
   </div>
 
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png"/>
     <a class="col-xs-2" href="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png">See in full size</a>
+
+    <b class="figure-text col-xs-12">Figure 8. Accidents vs. traffic comparison in eastern part of Helsinki.</b>
   </div>
+
+  <b>Seuraavaksi:
+    - Loput kuvatekstit<br>
+    - Conclusions valmiiksi
+    - Kuvista valkoiset reunat pois?
+    - Esitys kuntoon
+    - Esityksen harjoittelu
+    - Projektin palautus
+    -- Loput koodit master haaraan vaikka ei käytettäisi
+    -- process logi kuntoon ym.
+  </b>
+
+  <h3>Conclusions</h3>
+
+  <p class="text-field">
+
+    Based on the above figures, (to be continued...)
+
+  <p>As it's for example easy to assume, <b>Kehä I</b> and <b>Lahdenväylä</b> are both used quite a lot, but what isn't necessarily obvious is that
+    accidents happen in those roads way more often than in <b>Kehä III</b>. At the same time <b>Itäväylä</b> is still more accident prone than any of these.
+  </p>
 
   <h4 id="team">Team</h4>
   <ul>
