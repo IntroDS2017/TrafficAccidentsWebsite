@@ -2,45 +2,44 @@
 
 <div ng-app="TrafficAccidents" ng-controller="IndexController" class="container">
 
-  <h1 id="title">Traffic accidents in Helsinki city area</h1>
+  <h1 id="title">Traffic accidents in Helsinki area</h1>
 
 
   <h3>Introduction</h3>
 
   <p class="text-field">
-    We have done research based on the open datasets on <a href="https://www.avoindata.fi/data/fi/dataset/tieliikenneonnettomuudet">Road traffic accidents</a> and <a href="https://www.avoindata.fi/data/fi/dataset/liikennemaarat-helsingissa">Traffic Volumes</a> in the Helsinki city area.
-    Our initial plan was to find correlations between the traffic volumes and the road accidents on different streets in Helsinki, and we also wanted to see if there are any especially dangerous roads out there.
+    We have done research based on the open datasets on <a href="https://www.avoindata.fi/data/fi/dataset/tieliikenneonnettomuudet">Road traffic accidents</a> and <a href="https://www.avoindata.fi/data/fi/dataset/liikennemaarat-helsingissa">Traffic Volumes</a> in the Helsinki area.
+    Our initial plan was to find correlations between the traffic volumes and the road accidents on different streets in Helsinki.
+    We also wanted to see if the data would reveal are any especially dangerous roads.
     <br>
-    Following when we talk about annual ’traffic volume’ on a certain road, we mean the amount motor vehicles that annually pass that certain measurement point.
+    Following when we talk about annual ’traffic volume’ on a certain road, we mean the amount motor vehicles that annually pass a certain measurement point.
 
     <br><br>
 
     The dataset ‘Traffic Volumes’ in Helsinki provides information on the volumes of different vehicles on the streets of Helsinki from the year 2011 onwards. The traffic volumes were counted hourly (Monday-Thursday) in September and October, so the data represents average daily volumes during these two months.
     <br>
-    The other dataset ‘Road traffic accidents’ contains records of all traffic accidents in Finland (except in Åland) from 2005 to 2016. We used the data from 2011 to 2016, and selected the entries that are in the Helsinki area.
+    The other dataset ‘Road traffic accidents’ contains records of all traffic accidents in Finland (except in Åland) from 2005 to 2016. We used the data from 2011 to 2016, and selected the entries that are in Helsinki area.
   </p>
 
 
   <h3>Results</h3>
 
-  <p>The following are some figures we have produced based on data.
+  <p>The following are some figures we have produced based on the data.
     <br>
     <ul>
-      <li>The first figure expresses the amount of traffic in certain streets in Helsinki annually.</li>
-      <li>The second figure expresses the amounts of different kinds of traffic accidents for the same streets.</li>
-      <li>The third figure displays the ratio between these two.</li>
-
-      <br>For the third figure, high ratio means that the amount of accidents per traffic amount is high.
-      <br>If we had more information, we might even say that the likelihood of an accident happening on that street is higher than typically.
+      <li>The first figure shows the annual traffic volume in certain streets of Helsinki.</li>
+      <li>The second figure shows the amounts of traffic accidents on the same streets.</li>
+      <li>The third figure displays the accident - traffic volume ratios.</li>
+      <li>The remaining figures (4-8) are maps that display the accident - traffic volume ratios on some selected streets.</li>
     </ul>
   </p>
 
-  <div class="figure row">
+  <div style="margin-top: 20px;" class="figure row">
     <img class="col-xs-11" src="/assets/figures/2_trafficplot.png"/>
     <a class="col-xs-1" href="/assets/figures/2_trafficplot.png">See in full size</a>
 
     <span class="figure-text col-xs-12"><b>Figure 1. Annual traffic in Helsinki area.</b>
-      On the x-axis, you can see the different roads in alphabetical order, and for each road, six bars representing
+      The x-axis shows the different roads in alphabetical order, and for each road, six bars representing
       the years from 2011 to 2016. On the y-axis we have approximated annual traffic volume formed by multiplying the average
       daily volume from September to October by 365. Unit: 3.0 * 1e7 = 30 000 000 cars.
     </span>
@@ -51,7 +50,7 @@
     <a class="col-xs-1" href="/assets/figures/1_accidentplot.png">See in full size</a>
 
     <span class="figure-text col-xs-12"><b>Figure 2. Annual accidents in Helsinki area.</b>
-      On the y-axis you can see the total amounts of accidents.
+      The y-axis shows the total amounts of accidents.
     </span>
   </div>
 
@@ -59,27 +58,27 @@
     <img class="col-xs-11" src="/assets/figures/3_accident_ratioplot.png"/>
     <a class="col-xs-1" href="/assets/figures/3_accident_ratioplot.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 3. Annual accidents vs. traffic comparison.</b>
-      On the y-axis you can see the ratio between the accidents and traffic volumes. The higher the ratio, the more accidents
+    <span class="figure-text col-xs-12"><b>Figure 3. Annual accidents vs. traffic volumes comparison.</b>
+      The y-axis shows the ratio between the accidents and traffic volumes. The higher the ratio, the more accidents
       have occured on average for traffic volume. The ratio itself doesn't tell about the number of individuals involved in the accident.
     </span>
   </div>
 
 
-  <p>The following images visualize the above results on a map.</p>
-
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/4_measurement_points.png"/>
     <a class="col-xs-2" href="/assets/figures/4_measurement_points.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 4. Measurement points of traffic data on Helsinki map.</b></span>
+    <span class="figure-text col-xs-12"><b>Figure 4. Measurement points (on red) of traffic volumes data on Helsinki map.</b>
+      The white lines represent borders between different districts. The other lines represent roads of different sizes.
+    </span>
   </div>
 
   <div class="figure row">
     <img class="col-xs-10" src="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png"/>
     <a class="col-xs-2" href="/assets/figures/5_measurement_points_with_accidents_per_traffic_sum.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 5. Accidents vs. traffic comparison.</b>
+    <span class="figure-text col-xs-12"><b>Figure 5. Accident - traffic volume ratios.</b>
       Larger circle around a measurement point means higher average annual accident ratio.
     </span>
   </div>
@@ -88,7 +87,7 @@
     <img class="col-xs-10 figure-small" src="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png"/>
     <a class="col-xs-2" href="/assets/figures/6_measurement_points_with_accidents_per_traffic_sum_central.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 6. Accidents vs. traffic comparison in Helsinki central.</b>
+    <span class="figure-text col-xs-12"><b>Figure 6. Accident - traffic volume ratios in Helsinki city center.</b>
     </span>
 
   </div>
@@ -97,7 +96,7 @@
     <img class="col-xs-10 figure-small" src="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png"/>
     <a class="col-xs-2" href="/assets/figures/8_measurement_points_with_accidents_per_traffic_sum_north_west.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 7. Accidents vs. traffic comparison in western part of Helsinki.</b>
+    <span class="figure-text col-xs-12"><b>Figure 7. Accident - traffic volume ratios in the western part of Helsinki.</b>
     </span>
   </div>
 
@@ -105,8 +104,8 @@
     <img class="col-xs-10 figure-small" src="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png"/>
     <a class="col-xs-2" href="/assets/figures/7_measurement_points_with_accidents_per_traffic_sum_north_east.png">See in full size</a>
 
-    <span class="figure-text col-xs-12"><b>Figure 8. Accidents vs. traffic comparison in eastern part of Helsinki.</b>
-      Here the road of which name is unclearly visible is Itäväylä.
+    <span class="figure-text col-xs-12"><b>Figure 8. Accident - traffic volume ratios in the eastern part of Helsinki.</b>
+      The largest yellow circle represents the ratio on Itäväylä.
     </span>
   </div>
 
