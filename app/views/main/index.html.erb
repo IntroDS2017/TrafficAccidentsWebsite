@@ -10,7 +10,7 @@
   <p class="text-field">
     We have done research based on the open datasets on <a href="https://www.avoindata.fi/data/fi/dataset/tieliikenneonnettomuudet">Road traffic accidents</a> and <a href="https://www.avoindata.fi/data/fi/dataset/liikennemaarat-helsingissa">Traffic Volumes</a> in the Helsinki area.
     Our initial plan was to find correlations between the traffic volumes and the road accidents on different streets in Helsinki.
-    We also wanted to see if the data would reveal are any especially dangerous roads.
+    We also wanted to see if the data would reveal any especially dangerous roads.
     <br>
     Following when we talk about annual ’traffic volume’ on a certain road, we mean the amount motor vehicles that annually pass a certain measurement point.
 
@@ -18,7 +18,11 @@
 
     The dataset ‘Traffic Volumes’ in Helsinki provides information on the volumes of different vehicles on the streets of Helsinki from the year 2011 onwards. The traffic volumes were counted hourly (Monday-Thursday) in September and October, so the data represents average daily volumes during these two months.
     <br>
-    The other dataset ‘Road traffic accidents’ contains records of all traffic accidents in Finland (except in Åland) from 2005 to 2016. We used the data from 2011 to 2016, and selected the entries that are in Helsinki area.
+    The road traffic accident data comes from individual annual ‘Road traffic accidents’ datasets that contain records of all traffic accidents in Finland (except in Åland) from 2005 to 2016. We combined the datasets from 2011 to 2016, and selected the entries that are in Helsinki area.
+
+    <br><br>
+    After combining all road traffic accident data, we removed unnecessary columns and cleaned all street names (removed exact addresses, fixed different spellings, etc) to match the street names in the traffic volumes data.
+    Then we combined both the traffic volumes and road accidents into a single dataset we used in our analysis. More information on data processing can be found in <a href="https://github.com/IntroDS2017/TrafficAccidents">Github</a>.
   </p>
 
 
@@ -113,8 +117,12 @@
   <h3>Conclusions</h3>
 
   <p class="text-field">
-    Our analysis shows that there are some potentially problematic roads in Helsinki; especially Knutersintie has a very high accident-traffic volume ratio compared to other roads.
+    Our analysis shows that there are some potentially problematic roads in Helsinki; especially Knutersintie has a very high accident-traffic volume ratio compared to the other roads.
     It was a surprise that some major roads like Kehä 1, Hämeenlinnanväylä and Lahdenväylä have relative low accident-traffic volume ratios.
+    <br>
+    The road traffic accidents dataset contained very detailed data on the accidents, and could be utilized for much deeper analyses by itself.
+    Alone it lacked perspective, and for our use it required some estimations on the traffic volumes.
+    Our data pinpoints the roads which could perhaps require more attention in the future road planning.
   </p>
 
   <h4 id="team">Team</h4>
