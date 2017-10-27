@@ -30,8 +30,18 @@ h4 {
 }
 
 .figure-small {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
+}
+
+.figure-x-small {
+    width: 40%;
+    height: 40%;
+}
+
+.figure-xx-small {
+    width: 30%;
+    height: 30%;
 }
 
 .figure-text {
